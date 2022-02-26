@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>E-Ration | E-Ration.com</title>
+    <link rel="stylesheet" href="practice.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="just.js">
+  <!-- Select2 CSS --> 
+<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" /> 
+
+<!-- jQuery --> <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+<!-- Select2 JS --> 
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+    
+</head>
+
+<body>
+  
+    <nav id="navbar">
+        <div id="logo">
+            <img src="images/Group 6.png" alt="E-Ration.com">
+        </div>
+        <ul>
+            <li class="item"><a href="#home"> <img src="images/Ellipse 15.png" >About</a></li>
+            <li class="item"><a href="#home"><img src="images/Ellipse 14.png" >Cart</a></li>
+            <li class="item"><a href="#home"><img src="images/Ellipse 13.png" >Contact Us</a></li>
+            <li class="item"><a href="#home"><img src="images/Ellipse 12.png" >Login</a></li>     
+        </ul>
+        
+        
+    </nav>
+
+      
+
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="images/Rectangle 121 (1).png" style="width:100% " style="height: 60%">
+          <div class="text">We try to provide helping hand to elderly</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="images/Rectangle 65 (1).png" style="width:100%" style="height: 60%">
+          <div class="text"> minimize long queues outside ration shops</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="images/Rectangle 122.png" style="width:100%" style="height: 60%">
+          <div class="text">Making available the stock quantity ,price</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/Rectangle 123.png" style="width:100%" style="height: 60%">
+            <div class="text">Order online, get Home delivery</div>
+          </div>
+
+          <div class="mySlides fade">
+            <img src="images/Rectangle 124.png" style="width:100%" style="height: 60%">
+            <div class="text">Maintain Transaction History</div>
+          </div>
+
+         
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <script>
+            var slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 3000); // Change image every 2 seconds
+            }
+            </script>
+           
+           <section id="services-container">
+            <h1 class="h-primary center">Place Order In 3 Easy Step</h1>
+            <div id="services">
+                <div class="box">
+                    <img src="img/1.png" alt="">
+                    <h2 class="h-secondary center">Step 1</h2>
+                    <img src="images/Ellipse 12.png" alt="" height="40px" width="60px">
+                    <p class="center">In order to place orders, first register on our website.Then you'll receive login credentials
+                    </p>
+                </div>
+                <div class="box">
+                    <img src="img/2.png" alt="">
+                    <h2 class="h-secondary center">Step 2</h2>
+                    <p class="center"><img src="images/search.png" alt=""> search your nearest shop by area or pincode using search bar.
+                        Then you can see the list of grocery items available along with the shop timings of opening and closing</p>
+                </div>
+                <div class="box">
+                    <img src="img/3.png" alt="">
+                    <h2 class="h-secondary center">Step 3</h2>
+                    <p class="center"><img src="images/Rectangle 72.png" alt="">  Click on the shop and order the items you want by logging in</p>
+                </div>
+            </div>
+        </section>
+        <section id="Shop-Name">
+            <h1 class="h-primary center">Search Your Nearest ration Shop</h1>
+            <h6 class="h-tertiory center">Get a preview list of nearest shop and check availability of ration</h6>
+            <br><br>
+           
+            
+        </section>
+        
+
+          <script>
+            /* When the user clicks on the button,
+            toggle between hiding and showing the dropdown content */
+            function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+            }
+            
+            function filterFunction() {
+              var input, filter, ul, li, a, i;
+              input = document.getElementById("myInput");
+              filter = input.value.toUpperCase();
+              div = document.getElementById("myDropdown");
+              a = div.getElementsByTagName("a");
+              for (i = 0; i < a.length; i++) {
+                txtValue = a[i].textContent || a[i].innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                  a[i].style.display = "";
+                } else {
+                  a[i].style.display = "none";
+                }
+              }
+            }</script>
+
+            
+<div class="center">
+  <div id="Ration-Slot">
+      <div class="box">
+      
+          
+
+          <!-- Dropdown --> 
+<select id='selUser' style='width: 200px;'>
+  <option value='0'>Select Village</option> 
+  <option value='1'>Ambarnath</option> 
+  <option value='2'>Borivali</option> 
+  <option value='3'>Dombivali</option> 
+  <option value='4'>Ghatkopar</option> 
+  <option value='5'>Kalyan</option> 
+  <option value='6'>Kandivali</option> 
+  <option value='7'>Malad</option> 
+</select>
+<button class="Book-button" type="button" id="but_read">Search</button> 
+
+or
+
+<select id='sel' style='width: 200px;'>
+  <option value='0'>Search by Pincode</option> 
+  <option value='1'>400081</option> 
+  <option value='2'>400082</option> 
+  <option value='3'>400067</option> 
+  <option value='4'>400098</option> 
+  <option value='5'>400101</option> 
+  <option value='6'>409991</option> 
+  <option value='7'>409866</option> 
+</select>
+<button class="Book-button" type="button" id="but_read1">Search</button> 
+
+
+<br/>
+<div id='result'></div>
+      </div>
+      </div>
+     </div>
+
+    <script>
+        $(document).ready(function(){
+ 
+ // Initialize select2
+ $("#selUser").select2();
+
+ // Read selected option
+ $('#but_read').click(function(){
+   var username = $('#selUser option:selected').text();
+   var userid = $('#selUser').val();
+
+   $('#result').html(" name : " + username);
+
+ });
+});
+    </script>
+    
+    <script>
+       $(document).ready(function(){
+ 
+ // Initialize select2
+ $("#sel").select2();
+
+ // Read selected option
+ $('#but_read1').click(function(){
+   var username = $('#sel option:selected').text();
+   var userid = $('#sel').val();
+
+   $('#result').html(" pincode : " + username);
+
+ });
+});
+    </script>
+     
+  
+ 
+    <footer>
+        <div class="center">
+            Copyright &copy; www.E-Ration.com. All rights reserved!
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
